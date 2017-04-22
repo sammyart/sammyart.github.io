@@ -17,7 +17,7 @@ html, body, header, header h1 {
   margin: 4%;
   width: 92%;
 }
-*:focus, *:active {
+:focus, :active {
   outline: 0 !important;
 }
 nav {

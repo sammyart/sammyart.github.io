@@ -39,9 +39,6 @@ nav a {
   text-decoration: none;
   font-size: 19px;
 }
-nav a:not(:first-child) {
-  float: right;
-}
 /* Change the color of links on hover */
 nav a em {
   font-style: normal;

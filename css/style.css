@@ -38,7 +38,7 @@ nav a {
   text-decoration: none;
 }
 /* Change the color of links on hover */
-nav a em, nav a:hover {
+a h1 em, a:hover {
   font-style: normal;
   color: #f33;
 }

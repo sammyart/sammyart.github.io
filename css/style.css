@@ -17,8 +17,9 @@ html, body, header, header h1 {
   margin: 4%;
   width: 92%;
 }
-:focus, :active {
-  outline: 0 !important;
+:active, :focus {
+  outline: none;
+  -moz-outline-style: none;
 }
 nav {
   background-color: white;

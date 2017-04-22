@@ -1,4 +1,4 @@
-html, body, header, header h1 {
+html, body, header {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -6,7 +6,7 @@ html, body, header, header h1 {
 }
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #fff;
   padding: 40px;
   width: auto;
   max-width: 800px;
@@ -29,7 +29,7 @@ nav {
 nav a {
   float: left;
   display: block;
-  color: black;
+  color: #999;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,12 +39,12 @@ nav a:not(:first-child) {
   float: right;
 }
 /* Change the color of links on hover */
-nav a:hover {
-  color: #f33;
-}
 nav a em {
   font-style: normal;
   color: #f33;
+}
+nav a:hover, nav a em:hover {
+  color: #a33;
 }
 /* Hide the link that should open and close the topnav on small screens */
 nav .icon {

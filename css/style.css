@@ -30,8 +30,8 @@ nav {
   overflow: hidden;
 }
 /* Style the links inside the navigation bar */
-header a {
-  display: inline;
+header a, header a h1 {
+  display: inline-block;
   color: #999;
   text-align: center;
   padding: 0;

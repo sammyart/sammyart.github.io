@@ -30,7 +30,7 @@ nav {
   overflow: hidden;
 }
 /* Style the links inside the navigation bar */
-nav a {
+header a {
   display: inline;
   color: #999;
   text-align: center;

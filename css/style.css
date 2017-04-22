@@ -43,8 +43,8 @@ nav a em {
   font-style: normal;
   color: #f33;
 }
-nav a:hover, nav a em:hover {
-  color: #a33;
+nav a:hover {
+  color: #f33;
 }
 /* Hide the link that should open and close the topnav on small screens */
 nav .icon {

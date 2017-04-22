@@ -2,7 +2,11 @@ html, body, header {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   color: #999;
+}
+header h1, header nav a {
+  font-size: 1em;
 }
 .white-popup {
   position: relative;
@@ -53,15 +57,14 @@ nav .icon {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  html {font-size: 18px;}
   nav a:not(:first-child) {display: none;}
   nav a.icon {
     float: right;
     display: block;
   }
-}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
 This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
   nav.responsive {position: relative;}
   nav.responsive a.icon {
     position: absolute;
@@ -73,4 +76,7 @@ This class makes the topnav look good on small screens (display the links vertic
     display: block;
     text-align: left;
   }
+}
+@media screen and (min-width: 1200px) {
+  html {font-size: 20px;}
 }

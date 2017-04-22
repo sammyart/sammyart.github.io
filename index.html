@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="grid/pure-min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
+  <link rel="stylesheet" href="font/typography.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html">Barbara <em>Sam</em>anich</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
+    </nav>
+  </header>
+  <script language="javascript">
+    function toggleMenu() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+  </script>
+</body>
+</html>

@@ -31,20 +31,15 @@ nav {
 }
 /* Style the links inside the navigation bar */
 nav a {
-  float: left;
   display: block;
   color: #999;
   text-align: center;
   padding: 0;
   text-decoration: none;
-  font-size: 19px;
 }
 /* Change the color of links on hover */
-nav a em {
+nav a em, nav a:hover {
   font-style: normal;
-  color: #f33;
-}
-nav a:hover {
   color: #f33;
 }
 /* Hide the link that should open and close the topnav on small screens */

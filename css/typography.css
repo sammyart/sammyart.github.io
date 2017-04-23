@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html, body, h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+h1 {
+  font-size: 1.4em;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 0.8em;
+}
+header h1 {
+  font-size: 1em;
+}
+/* Style the links inside the navigation bar */
+h1 a, nav a {
+  text-align: center;
+  text-decoration: none;
+}
+h1 a em {
+  font-style: normal;
+}
+.white-popup {
+  text-align: center;
+}

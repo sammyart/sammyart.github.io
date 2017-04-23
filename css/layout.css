@@ -2,15 +2,31 @@ body {
   margin: 10px;
 }
 header {
-  margin: 0 10%;
+  margin-left:8%;
+  margin-right:8%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
 }
 h1 {
   margin: 0;
 }
 .portfolio a img {
-  margin: 4%;
-  width: 92%;
+  margin:auto;
+  margin-bottom: 40px;
+  width: 90%;
+}
+/*.portfolio a:hover {
+    opacity:0.3;
+}*/
+.portfolio img {
+    -webkit-filter: brightness(100%);
+}
+.portfolio img:hover {
+    -webkit-filter: brightness(30%);
+}
+.portfolio a:focus {
+  outline: 0;
 }
 .white-popup {
   position: relative;
@@ -36,17 +52,15 @@ h1 a {
 
 nav a {
   float: right;
-}
-
-nav a {
-  margin-left: 10px;
+  margin-left: 1.6em;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 nav .icon {
   display: none;
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 560px) {
   nav a {display: none;}
   nav a.icon {
@@ -54,7 +68,8 @@ nav .icon {
     display: block;
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   nav.responsive {position: relative;}
   nav.responsive a.icon {
     position: absolute;
@@ -66,5 +81,4 @@ nav .icon {
     display: block;
     text-align: left;
   }
-  h1 a, nav a {font-size: 16px;}
 }

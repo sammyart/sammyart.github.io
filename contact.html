@@ -6,16 +6,18 @@
   <title>Contact Barbara Samanich</title>
   <link rel="stylesheet" href="grid/pure-min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
-  <link rel="stylesheet" href="font/typography.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/color.css">
   <link rel="stylesheet" href="css/contact.css">
+  <script src="lib/nav.js"></script>
 </head>
 <body>
   <header>
+    <h1><a href="index.html">Barbara <em>Sam</em>anich</a></h1>
     <nav class="topnav" id="myTopnav">
-      <a href="index.html">Barbara <em>Sam</em>anich</a>
-      <a href="work.html">Work</a>
       <a href="contact.html">Contact</a>
+      <a href="work.html">Work</a>
       <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </nav>
   </header>
@@ -23,7 +25,7 @@
     <form action="/contact.php" method="post">
 
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name...">
+      <input type="text" id="name" name="name" placeholder="Your Name">
 
       <label for="email">EMail</label>
       <input type="text" id="email" name="email" placeholder="you@somedomain.com">
@@ -32,30 +34,12 @@
       <input type="text" id="subject" name="subject" placeholder="Subject">
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+      <textarea id="message" name="message" placeholder="Write to me" style="height:200px"></textarea>
 
       <input type="submit" value="Submit">
     </form>
   </section>
   <script>
-    function toggleMenu() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    function showHide(elem) {
-      if(elem.selectedIndex != 0) {
-        //hide the divs
-        for(var i=0; i < divsO.length; i++) {
-          divsO[i].style.display = 'none';
-        }
-        //unhide the selected div
-        document.getElementById('div'+elem.value).style.display = 'block';
-      }
-    }
     window.onload=function() {
       //get the divs to show/hide
       divsO = document.getElementById("frmMyform").getElementsByTagName('div');

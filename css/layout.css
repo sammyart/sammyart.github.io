@@ -19,9 +19,6 @@ h1 {
 /*.portfolio a:hover {
     opacity:0.3;
 }*/
-.portfolio img {
-    -webkit-filter: brightness(100%);
-}
 .portfolio img:hover {
     -webkit-filter: brightness(30%);
 }

@@ -5,7 +5,7 @@ body {
 #home {
   background: #c36230 url('../img/sun-background-landscape.jpg') no-repeat fixed;
   background-position: right bottom;
-  background-size: 100% auto;
+  background-size: auto 100%;
 }
 
 header {

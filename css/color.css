@@ -2,10 +2,17 @@ body {
   color: #999;
 }
 
-#home {
-  background: #c36230 url('../img/sun-background-landscape.jpg') no-repeat fixed;
+#home, #home body {
   background-position: right bottom;
   background-size: auto 100%;
+}
+
+#home {
+  background: #c36230 url('../img/sun-background-landscape.jpg') no-repeat fixed;
+}
+
+#home body {
+  background: url('../img/Sam_homepage graphic.svg') no-repeat fixed;
 }
 
 header {

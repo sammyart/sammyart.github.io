@@ -1,6 +1,11 @@
 body {
   color: #999;
 }
+
+header {
+  background-color: white;
+}
+
 .white-popup {
   background: #FFF;
 }

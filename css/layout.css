@@ -2,11 +2,7 @@ body {
   margin: 10px;
 }
 header {
-  margin-left:8%;
-  margin-right:8%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
+  padding: 20px 8%;
 }
 h1 {
   margin: 0;

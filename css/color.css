@@ -9,8 +9,10 @@ body {
 }
 
 #home > body {
-  background: url(../img/Sam_homepage graphic.svg) no-repeat fixed;
+  size: 100%;
+  background: inherit url(../img/Sam_homepage graphic.svg) no-repeat fixed;
   background-position: right bottom;
+  background-size: auto 100%;
 }
 
 header {

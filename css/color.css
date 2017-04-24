@@ -1,6 +1,9 @@
 body {
-  background: #c36230 url('img/sun-background-portrait.jpg') no-repeat fixed right auto;
   color: #999;
+}
+
+#home {
+  background: #c36230 url('img/sun-background-portrait.jpg') no-repeat fixed right auto;
 }
 
 header {

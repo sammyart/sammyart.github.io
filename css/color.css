@@ -9,7 +9,6 @@ body {
 }
 
 #home > body {
-  size: 100%;
   background: url("../img/Sam_homepage_graphic.svg") no-repeat fixed;
   background-position: right bottom;
   background-size: auto 100%;

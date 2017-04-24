@@ -5,10 +5,6 @@ body {
   background: #FFF;
 }
 
-nav {
-  background-color: white;
-}
-
 /* Style the links inside the navigation bar */
 h1 a, nav a {
   color: #999;

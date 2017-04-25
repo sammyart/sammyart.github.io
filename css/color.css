@@ -1,4 +1,4 @@
-body {
+#home {
   position: relative;
   z-index: 1;
   color: #999;
@@ -7,11 +7,15 @@ body {
   background-size: 100% auto;
 }
 
-body:after {
+#home::after {
   position: absolute;
   z-index: -1;
+  content: " ";
   background: transparent url("../img/Sam-homebody-bg.svg") no-repeat fixed;
-  background-position: right bottom;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: 100% auto;
 }
 

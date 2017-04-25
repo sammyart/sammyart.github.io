@@ -9,11 +9,12 @@ h1 {
   margin-bottom: 40px;
   width: 90%;
 }
-.portfolio img:hover {
-    -webkit-filter: brightness(30%);
-}
 .portfolio a:focus {
   outline: 0;
+}
+.portfolio a img:hover {
+  -webkit-filter: brightness(30%);
+  cursor: pointer;
 }
 .white-popup {
   position: relative;

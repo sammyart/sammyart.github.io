@@ -28,7 +28,7 @@
   <section class="portfolio pure-g">
     <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" id="starbucks-popup" href="#">
       <img src="img/Starbucks/WPS_beans_thumb_960x540.jpg" class="pure-img"></a>
-    <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" href="img/Tiger/Tiger_main 1920x1080.jpg">
+    <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" id="tiger-popup" href="#">
       <img src="img/Tiger/COT Tiger thumb 960x540.jpg" class="pure-img"></a>
     <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" id="ebb-popup" href="#">
       <img src="img/EBB/EBB_logo_thumb_960x540.jpg" class="pure-img"></a>
@@ -95,6 +95,16 @@
           { src: 'img/Samamama/Samamama_web_main1920.jpg' },
           { src: 'img/Samamama/sama collections screen_1920x1080.jpg' },
           { src: 'img/Samamama/Samamama package_1920x1080.jpg' }
+        ],
+        gallery: {
+          enabled: true
+        },
+        type: 'image' // this is a default type
+      });
+      $('#tiger-popup').magnificPopup({
+        items: [
+          { src: 'img/Tiger/Tiger_main 1920x1080.jpg' },
+          { src: 'img/Tiger-black-tiger-t.jpg' }
         ],
         gallery: {
           enabled: true

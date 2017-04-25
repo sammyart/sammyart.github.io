@@ -1,12 +1,12 @@
 body {
   color: #999;
-  background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
+  background: url("../img/Sam-homebody-bg.svg") no-repeat fixed;
   background-position: right bottom;
   background-size: 100% auto;
 }
 
 body:after {
-  background: url("../img/Sam-homebody-bg.svg") no-repeat fixed;
+  background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
   background-position: right bottom;
   background-size: 100% auto;
 }

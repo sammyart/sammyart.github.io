@@ -46,7 +46,7 @@
       <img src="img/EOC/Eat On Campus_960x540.jpg" class="pure-img"></a>
     <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" href="img/Tropito/Tropito_all_web 1920x1025.jpg">
       <img src="img/Tropito/tropito farm_thumb_960x540.jpg" class="pure-img"></a>
-    <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" href="img/JuiceCore/JC main_1920x1080.jpg">
+    <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" id="juicecore-popup" href="#">
       <img src="img/JuiceCore/JC_new_thumb.jpg" class="pure-img"></a>
     <a class="magnific pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4" href="img/Farm2Fork/Farm 2 Fork_main1080x1366.jpg">
       <img src="img/Farm2Fork/Farm2Fork_thumb_960x540.jpg" class="pure-img"></a>
@@ -140,6 +140,16 @@
         items: [
           { src: '' },
           { src: 'img/Farm2Fork/Farm 2 Fork Menu_menu.jpg' }
+        ],
+        gallery: {
+          enabled: true
+        },
+        type: 'image' // this is a default type
+      });
+      $('#juicecore-popup').magnificPopup({
+        items: [
+          { src: 'img/JuiceCore/JC main_1920x1080.jpg' },
+          { src: 'img/JuiceCore/Meetro spread_1920x1080.jpg' }
         ],
         gallery: {
           enabled: true

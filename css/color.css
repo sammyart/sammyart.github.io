@@ -2,7 +2,7 @@ body {
   position: relative;
   z-index: 1;
   color: #999;
-  background: url("../img/Sam-homebody-bg.svg") no-repeat fixed;
+  background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
   background-position: right bottom;
   background-size: 100% auto;
 }
@@ -10,7 +10,7 @@ body {
 body:after {
   position: absolute;
   z-index: -1;
-  background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
+  background: transparent url("../img/Sam-homebody-bg.svg") no-repeat fixed;
   background-position: right bottom;
   background-size: 100% auto;
 }

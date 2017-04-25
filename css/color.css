@@ -53,3 +53,9 @@ h1 a em {
     color: black;
   }
 }
+
+@media screen and (min-aspect-ratio: 1/1) {
+  #home {
+    background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
+  }
+}

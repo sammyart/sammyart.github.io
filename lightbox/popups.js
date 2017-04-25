@@ -96,7 +96,18 @@ $(document).ready(function () {
   });
   $('#Logo').magnificPopup({
     items: [
-      { src: 'img/logo/Eat On Campus_960x540.jpg' }
+      { src: 'img/logo/Amped slide.jpg' },
+      { src: 'img/logo/Bowl n Roll_Slide_1920.jpg' },
+      { src: 'img/logo/CCYA logo slide.jpg' },
+      { src: 'img/logo/Corban dining_logo slide.jpg' },
+      { src: 'img/logo/Koji slide.jpg' },
+      { src: 'img/logo/MarketPlace SideBySide_1920.jpg' },
+      { src: 'img/logo/Michellies logo slide.jpg' },
+      { src: 'img/logo/SAM logo slide.jpg' },
+      { src: 'img/logo/The Grove_logo slide.jpg' },
+      { src: 'img/logo/UNLV logo slide.jpg' },
+      { src: 'img/logo/Eat On Campus_960x540.jpg' },
+      { src: 'img/logo/Michellies pink logo slide.jpg' }
     ],
     gallery: {
       enabled: true

@@ -94,7 +94,7 @@ $(document).ready(function () {
     },
     type: 'image' // this is a default type
   });
-  $('#infographics').magnificPopup({
+  $('#Infographics').magnificPopup({
     items: [
       { src: 'img/infographics/Infographic Main_1920.jpg' },
       { src: 'img/infographics/Journey info_web1920.jpg' }

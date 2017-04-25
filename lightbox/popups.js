@@ -96,7 +96,7 @@ $(document).ready(function () {
   });
   $('#Logo').magnificPopup({
     items: [
-      { src: 'img/logo/' }
+      { src: 'img/logo/Eat On Campus_960x540.jpg' }
     ],
     gallery: {
       enabled: true

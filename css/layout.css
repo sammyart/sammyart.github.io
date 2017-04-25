@@ -9,9 +9,9 @@ h1 {
   margin-bottom: 40px;
   width: 90%;
 }
-/*.portfolio a:hover {
-    opacity:0.3;
-}*/
+.portfolio a:after {
+  content: "<h3>"attr(name)"</h3>";
+}
 .portfolio img:hover {
     -webkit-filter: brightness(30%);
 }

@@ -9,7 +9,7 @@ body {
 }
 
 #home > body {
-  background: url("../img/Sam_homepage_graphic.svg") no-repeat fixed;
+  background: url("../img/Sam_homepage_graphic.png") no-repeat fixed;
   background-position: right bottom;
   background-size: auto 100%;
 }

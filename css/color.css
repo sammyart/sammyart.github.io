@@ -60,4 +60,7 @@ h1 a em {
     background-position: right bottom;
     background-size: auto 100%;
   }
+  #home > body {
+    background-size: 100% auto;
+  }
 }

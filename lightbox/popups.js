@@ -21,7 +21,7 @@ $(document).ready(function () {
     },
     type: 'image' // this is a default type
   });
-  $('#City_of_Tempe').magnificPopup({
+  $('#City_Of_Tempe').magnificPopup({
     items: [
       { src: 'img/Tiger/Tiger_main 1920x1080.jpg' },
       { src: 'img/Tiger/black-tiger-t.jpg' }

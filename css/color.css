@@ -13,7 +13,7 @@ body {
   height: 100%;
   background: url("../img/Sam_homepage_graphic.svg") no-repeat fixed;
   background-position: right bottom;
-  background-size: auto 100%;
+  background-size: 100% auto;
 }
 
 header {
@@ -61,6 +61,6 @@ h1 a em {
     background-size: auto 100%;
   }
   #home > body {
-    background-size: 100% auto;
+    background-size: auto 100%;
   }
 }

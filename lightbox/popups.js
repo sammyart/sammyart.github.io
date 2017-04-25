@@ -124,7 +124,7 @@ $(document).ready(function () {
   });
   $('#Tropito').magnificPopup({
     items: [
-      { src: 'img/Farm2Fork/Farm 2 Fork Menu_menu.jpg' }
+      { src: 'img/Tropito/Tropito_all_web 1920x1025.jpg' }
     ],
     gallery: {
       enabled: true

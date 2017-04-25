@@ -82,7 +82,6 @@ $(document).ready(function () {
   });
   $('#Meetro').magnificPopup({
     items: [
-      { src: 'img/Meetro/Meetro spread_1920x1080.jpg' },
       { src: 'img/Meetro/Peppermint Mocha_Meetro_main1080x1375.jpg' },
       { src: 'img/Meetro/Meetro White Chocolate_slide_1080.jpg' },
       { src: 'img/Meetro/London Fog_Illustration_slide_1080.jpg' },

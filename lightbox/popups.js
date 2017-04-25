@@ -94,6 +94,16 @@ $(document).ready(function () {
     },
     type: 'image' // this is a default type
   });
+  $('#infographics').magnificPopup({
+    items: [
+      { src: 'img/infographics/Infographic Main_1920.jpg' },
+      { src: 'img/infographics/Journey info_web1920.jpg' }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // this is a default type
+  });
   $('#Logo').magnificPopup({
     items: [
       { src: 'img/logo/Amped slide.jpg' },

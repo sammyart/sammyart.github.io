@@ -30,6 +30,9 @@ h1 a, nav a {
 h1 a em {
   font-style: normal;
 }
+.white-popup h2, .white-popup h3 {
+  text-align: center;
+}
 /*.white-popup {
   text-align: center;
 }*/

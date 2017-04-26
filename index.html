@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="css/typography.css">
   <link rel="stylesheet" href="css/color.css">
   <script src="lib/nav.js"></script>
+  <style>
+    .stretch_it{ white-space: nowrap; }
+    .justify{ text-align:justify; }
+  </style>
 </head>
 <body>
   <header>
@@ -17,11 +21,42 @@
       <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </nav>
   </header>
-  <article id="barbara" class="white-popup"">
-    <h2>ART DIRECTION / DESIGN / ILLUSTRATION</h2>
+  <article id="barbara" class="white-popup">
+    <h2 class="stretch">ART DIRECTION / DESIGN / ILLUSTRATION</h2>
     <p>Sam is a multi disciplinary designer specializing in brand identity design, art direction and design for advertising. She brings with her experience gained working on major international brands Aramark, Kraft, Lipton, Wish-Bone, Starbucks, Saks Fifth Avenue and Einstein Bros among many more.</p>
     <p style='display:none;'>International ad campaigns featuring both print and TV ads showcasing Sam's illustrative style ran for seven record breaking years due a proven ability to increase product sales. Their signature look was created by combining Sam's uniquely playful style with her own hand drawn calligraphic lettering merged with clever concepts, headlines, tag lines, and copy writing.</p>
     <p style='display:none;'>In [year], Sam co-founded the boutique apparel design company Samamama, which rapidly gained acclaim for...</p>
   </article>
+  <script>
+    $.fn.strech_text = function(){
+    var elmt          = $(this),
+        cont_width    = elmt.width(),
+        txt           = elmt.html(),
+        one_line      = $('<span class="stretch_it">' + txt + '</span>'),
+        nb_char       = elmt.text().length,
+        spacing       = cont_width/nb_char,
+        txt_width;
+    
+    elmt.html(one_line);
+    txt_width = one_line.width();
+    
+    if (txt_width < cont_width){
+        var  char_width     = txt_width/nb_char,
+             ltr_spacing    = spacing - char_width + (spacing - char_width)/nb_char ; 
+  
+        one_line.css({'letter-spacing': ltr_spacing});
+    } else {
+        one_line.contents().unwrap();
+        elmt.addClass('justify');
+    }
+};
+
+
+$(document).ready(function () {
+    $('.stretch').each(function(){
+        $(this).strech_text();
+    });
+});
+  </script>
 </body>
 </html>

@@ -25,6 +25,8 @@ body {
 
 header {
   background-color: white;
+  position: absolute;
+  z-index="-2";
 }
 
 .white-popup {

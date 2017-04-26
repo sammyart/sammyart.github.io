@@ -34,7 +34,7 @@ h1 {
 
 .white-popup h2 {
   padding-bottom: 1em;
-  border-bottom: dotted black 3px;
+  border-bottom: dotted #333 2px;
 }
 
 nav {

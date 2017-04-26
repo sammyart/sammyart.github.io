@@ -115,6 +115,7 @@ $(document).ready(function () {
       { src: 'img/logo/SAM logo slide.jpg' },
       { src: 'img/logo/The Grove_logo slide.jpg' },
       { src: 'img/logo/UNLV logo slide.jpg' },
+      { src: 'img/logo/Feverish logo slide.jpg' },
       { src: 'img/logo/Michellies pink logo slide.jpg' }
     ],
     gallery: {

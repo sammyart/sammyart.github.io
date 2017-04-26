@@ -5,6 +5,8 @@ body {
 #home {
   position: relative;
   z-index: 1;
+  width: 100%;
+  height: 100%;
   background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
   background-position: right bottom;
   background-size: 100% auto;
@@ -63,12 +65,12 @@ h1 a em {
 }
 
 @media screen and (min-aspect-ratio: 1/1) {
-  body#home {
+  #home {
     background: #c36230 url("../img/sun-background-landscape.jpg") no-repeat fixed;
     background-position: right bottom;
     background-size: auto 100%;
   }
-  body#home::after {
+  #home::after {
     background-size: auto 100%;
   }
 }

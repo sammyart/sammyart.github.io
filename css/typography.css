@@ -30,9 +30,9 @@ h1 a, nav a {
 h1 a em {
   font-style: normal;
 }
-.white-popup {
+/*.white-popup {
   text-align: center;
-}
+}*/
 /*@media screen and (max-width: 560px) {
   h1 a, nav a {font-size: 18px;}
   form {font-size: 12px;}

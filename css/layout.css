@@ -4,6 +4,9 @@ header {
 h1 {
   margin: 0;
 }
+.portfolio figure {
+  margin: 0;
+}
 .portfolio a img, .portfolio figure img {
   margin:auto;
   margin-bottom: 40px;

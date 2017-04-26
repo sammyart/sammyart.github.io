@@ -28,10 +28,10 @@ h1 {
 .white-popup {
   position: absolute;
   z-index: -2;
-  padding: 40px;
+  padding: 1em;
   width: auto;
   max-width: 540;
-  margin: 4em 50% 0 8%;
+  margin: 2em 50% 0 8%;
 }
 
 nav {

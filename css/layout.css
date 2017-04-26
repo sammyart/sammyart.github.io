@@ -24,7 +24,7 @@ h1 {
 }
 
 .white-popup {
-  position: relative;
+  position: absolute;
   z-index: -2;
   padding: 40px;
   width: auto;

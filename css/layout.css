@@ -31,7 +31,9 @@ h1 {
   padding: 1em;
   width: auto;
   max-width: 540px;
+  height: 80%;
   margin: 3.4em 50% 0 8%;
+  overflow: auto;
 }
 
 nav {

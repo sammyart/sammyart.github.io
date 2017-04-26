@@ -12,10 +12,14 @@ h1 {
 .portfolio a:focus {
   outline: 0;
 }
-.portfolio a img:hover {
+.portfolio a img:hover, .portfolio figure img:hover {
   -webkit-filter: brightness(30%);
   cursor: pointer;
 }
+.portfolio figcaption {
+  display: none;
+}
+
 .white-popup {
   position: relative;
   padding: 40px;

@@ -122,7 +122,7 @@ $(document).ready(function () {
     },
     type: 'image' // this is a default type
   });
-  $('#Tropito').magnificPopup({
+  $('#Packaging').magnificPopup({
     items: [
       { src: 'img/packaging/Tropito_all_web 1920x1025.jpg' }
     ],

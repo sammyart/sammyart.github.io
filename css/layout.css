@@ -29,9 +29,9 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   left: 50%;
-  transform: translateX(-25%);
+  transform: translateX(-75%);
   z-index: -2;
-  width: 37em;
+  width: 28em;
 }
 
 nav {

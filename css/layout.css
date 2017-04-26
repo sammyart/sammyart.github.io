@@ -25,6 +25,7 @@ h1 {
   position: absolute;
   margin: auto;
   text-align: center;
+  display: none;
 }
 
 .white-popup {

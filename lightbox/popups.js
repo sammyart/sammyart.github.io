@@ -143,8 +143,7 @@ $(document).ready(function () {
   });
   $('#Signage').magnificPopup({
     items: [
-      { src: 'img/signage/JC main_1920x1080.jpg' },
-      { src: 'img/signage/Meetro spread_1920x1080.jpg' }
+      { src: 'img/signage/Farm 2 Fork_main1080x1366.jpg' }
     ],
     gallery: {
       enabled: true

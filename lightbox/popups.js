@@ -23,8 +23,8 @@ $(document).ready(function () {
   });
   $('#City_Of_Tempe').magnificPopup({
     items: [
-      { src: 'img/Tiger/Tiger_main 1920x1080.jpg' },
-      { src: 'img/Tiger/black-tiger-t.jpg' }
+      { src: 'img/CoT/Tiger_main 1920x1080.jpg' },
+      { src: 'img/CoT/black-tiger-t.jpg' }
     ],
     gallery: {
       enabled: true
@@ -124,7 +124,7 @@ $(document).ready(function () {
   });
   $('#Tropito').magnificPopup({
     items: [
-      { src: 'img/Tropito/Tropito_all_web 1920x1025.jpg' }
+      { src: 'img/packaging/Tropito_all_web 1920x1025.jpg' }
     ],
     gallery: {
       enabled: true

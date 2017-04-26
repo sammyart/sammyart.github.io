@@ -28,7 +28,8 @@ header {
 }
 
 .white-popup {
-  background: #FFF;
+  background-color: rgb(99, 99, 9);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Style the links inside the navigation bar */

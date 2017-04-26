@@ -35,6 +35,11 @@ header {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+article h1 em {
+  font-style: normal;
+  color: red;
+}
+
 /* Style the links inside the navigation bar */
 h1 a, nav a {
   color: #999;

@@ -31,6 +31,7 @@ h1 {
   left: 7%;
   width: 516px;
   z-index: -2;
+  border: bottom solid black 3px;
 }
 
 nav {

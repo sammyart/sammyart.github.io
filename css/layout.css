@@ -28,11 +28,10 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-25%);
   z-index: -2;
-  padding: 1em;
-  width: auto;
-  max-width: 37em;
-  margin: 0 50% 0 5%;
+  width: 37em;
 }
 
 nav {

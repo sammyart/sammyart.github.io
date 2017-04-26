@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 html, body, h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
 }
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
 h1 {
   font-size: 1.4em;

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 html, body, h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Century Gothic", CenturyGothic, 'Montserrat', sans-serif;
   font-size: 20px;
   font-style: normal;
+}
+html, body {
   font-weight: 200;
 }
 h1, h2, h3 {
-  font-family: "Century Gothic", CenturyGothic, 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 300;
 }
 h1 {

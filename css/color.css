@@ -19,10 +19,7 @@ body {
   width: inherit;
   height: inherit;
   background: transparent url("../img/Sam-homebody-bg.svg") no-repeat fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-position: right bottom;
   background-size: 100% auto;
 }
 

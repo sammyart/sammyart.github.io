@@ -4,12 +4,12 @@ header {
 h1 {
   margin: 0;
 }
-.portfolio a img {
+.portfolio a img, .portfolio figure img {
   margin:auto;
   margin-bottom: 40px;
   width: 90%;
 }
-.portfolio a:focus {
+.portfolio a:focus, .portfolio figure:focus {
   outline: 0;
 }
 .portfolio a img:hover, .portfolio figure img:hover {

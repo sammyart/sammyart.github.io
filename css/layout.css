@@ -29,8 +29,8 @@ h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 7%;
-  width:525px;
+  left: 5vw;
+  width:37vw;
 }
 
 .white-popup h2 {

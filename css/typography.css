@@ -19,11 +19,9 @@ h2 {
 h3 {
   font-size: 0.8em;
 }
-header h1 {
-  font-size: 1em;
-}
-/* Style the links inside the navigation bar */
-h1 a, nav a {
+
+header h1 a, header nav a {
+  font-size: 1.8vw;
   text-align: center;
   text-decoration: none;
 }
@@ -37,7 +35,8 @@ h1 a em {
   line-height: 2em;
   font-size: .8em;
 }
-@media screen and (max-width: 580px) {
-  h1 a, nav a {font-size: 1.4em;}
+@media screen and (max-width: 1500px) {
+  header h1 a, header nav a, .white-popup h2 {font-size: 24px;}
+  .white-popup {font-size:16px}
   form {font-size: 1.2em;}
 }

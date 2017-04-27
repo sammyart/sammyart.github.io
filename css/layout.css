@@ -68,7 +68,10 @@ nav .icon {
     float: right;
     display: block;
   }
-  nav.responsive {position: relative;}
+  nav.responsive {
+    position: relative;
+    margin-top: 70px;
+  }
   nav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -79,4 +82,7 @@ nav .icon {
     display: block;
     text-align: left;
   }
+}
+@media screen and (max-width: 1500px) {
+  .white-popup {width: 520px;}
 }

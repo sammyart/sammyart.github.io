@@ -1,6 +1,7 @@
 header {
   padding: 20px 8%;
   width: 84%;
+  position: fixed;
 }
 h1 {
   margin: 0;
@@ -61,7 +62,7 @@ nav .icon {
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
 Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 580px) {
   nav a {display: none;}
   nav a.icon {
     float: right;

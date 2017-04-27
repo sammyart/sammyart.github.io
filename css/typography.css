@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 html, body, h1, h2, h3 {
   font-family: "Century Gothic", CenturyGothic, 'Montserrat', sans-serif;
-  font-size: 32px;
+  font-size: 22px;
   font-style: normal;
 }
 html, body {
@@ -41,4 +41,14 @@ h1 a em {
   h1 a, nav a {font-size: 1.4em;}
   form {font-size: 1.2em;}
 }
-  
+
+@media screen and (min-width: 1680px) {
+  .white-popup h2 {
+    font-size: 1.5em;
+  }
+  .white-popup {
+    width: 760px;
+    line-height: 2em;
+    font-size: 1.2em;
+  }
+}

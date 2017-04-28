@@ -20,7 +20,7 @@ h3 {
   font-size: 0.8em;
 }
 
-header h1 a, header nav a {
+header a {
   font-size: 1.8vw;
   text-align: center;
   text-decoration: none;
@@ -36,7 +36,15 @@ h1 a em {
   font-size: .8em;
 }
 @media screen and (max-width: 1500px) {
-  header h1 a, header nav a, .white-popup h2 {font-size: 24px;}
-  .white-popup {font-size:16px}
-  form {font-size: 1.2em;}
+  header h1 a,
+  header nav a,
+  .white-popup h2 {
+    font-size: 24px;
+  }
+  .white-popup {
+    font-size:16px
+  }
+  form {
+    font-size: 1.2em;
+  }
 }

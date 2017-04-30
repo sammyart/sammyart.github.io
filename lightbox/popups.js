@@ -10,6 +10,7 @@ $(document).ready(function () {
   });
   $('#Starbucks').magnificPopup({
     items: [
+      { src: 'img/Starbucks/01 Starbucks.jpg' },
       { src: 'img/Starbucks/WPS_Holiday Duo_slide_1080x1375.jpg' },
       { src: 'img/Starbucks/blender wps_1080.jpg' },
       { src: 'img/Starbucks/Frappy Hour_1080x1375.jpg' },
@@ -23,8 +24,8 @@ $(document).ready(function () {
   });
   $('#City_Of_Tempe').magnificPopup({
     items: [
-      { src: 'img/CoT/Tiger_main 1920x1080.jpg' },
-      { src: 'img/CoT/black-tiger-t.jpg' }
+      { src: 'img/CoT/01 CoT (Tempe bike month).jpg' },
+      { src: 'img/CoT/02 CoT (tiger black t-shirt).jpg' }
     ],
     gallery: {
       enabled: true
@@ -33,10 +34,10 @@ $(document).ready(function () {
   });
   $('#Einstein_Bros_Bagels').magnificPopup({
     items: [
-      { src: 'img/EBB/EBB Tiramisu mob_1080.jpg' },
-      { src: 'img/EBB/EBB Tiramisu_venice_1080.jpg' },
-      { src: 'img/EBB/EBB Irish Cream_1080.jpg' },
-      { src: 'img/EBB/EBB Italian Soda_1080.jpg' }
+      { src: 'img/EBB/01 EBB (tiramisu mob).jpg' },
+      { src: 'img/EBB/02 EBB (tiramisu Venice).jpg' },
+      { src: 'img/EBB/03 EBB (Irish cream).jpg' },
+      { src: 'img/EBB/04 EBB (Italian Soda).jpg' }
     ],
     gallery: {
       enabled: true
@@ -45,9 +46,9 @@ $(document).ready(function () {
   });
   $('#Samamama').magnificPopup({
     items: [
-      { src: 'img/Samamama/Samamama_web_main1920.jpg' },
-      { src: 'img/Samamama/sama collections screen_1920x1080.jpg' },
-      { src: 'img/Samamama/Samamama package_1920x1080.jpg' }
+      { src: 'img/Samamama/01 Samamama (faces).jpg' },
+      { src: 'img/Samamama/02 Samamama (web site).jpg' },
+      { src: 'img/Samamama/03 Samamama (collateral).jpg' }
     ],
     gallery: {
       enabled: true
@@ -56,9 +57,9 @@ $(document).ready(function () {
   });
   $('#Wish-Bone').magnificPopup({
     items: [
-      { src: 'img/Wish-Bone/italian bottle frame_1920.jpg' },
-      { src: 'img/Wish-Bone/WB couple_1920.jpg' },
-      { src: "img/Wish-Bone/worlds color frame_1920.jpg" },
+      { src: 'img/Wish-Bone/01 Wish-Bone (italian bottle).jpg' },
+      { src: 'img/Wish-Bone/02 Wish-Bone (couple).jpg' },
+      { src: 'img/Wish-Bone/03 Wish-Bone (worlds color).jpg' },
       { src: 'https://www.youtube.com/watch?v=uFXYwTafVqc?rel=0', type: 'iframe' }
     ],
     gallery: {
@@ -68,12 +69,13 @@ $(document).ready(function () {
   });
   $('#Eat_On_Campus').magnificPopup({
     items: [
-      { src: 'img/EOC/Campus Eats_main 1080x1375.jpg' },
-      { src: 'img/EOC/EOC Tree_1080.jpg' },
-      { src: 'img/EOC/explore_web_1080.jpg' },
-      { src: 'img/EOC/Happy Place_1080.jpg' },
-      { src: 'img/EOC/funky flag_web 1080x1375.jpg' },
-      { src: 'img/EOC/Think Outside_1080.jpg' }
+      { src: 'img/EOC/01 EOC (full plate).jpg' },
+      { src: 'img/EOC/02 EOC (campus eats).jpg' },
+      { src: 'img/EOC/03 EOC (tree).jpg' },
+      { src: 'img/EOC/04 EOC (explore).jpg' },
+      { src: 'img/EOC/05 EOC (happy place).jpg' },
+      { src: 'img/EOC/06 EOC (funky flag).jpg' },
+      { src: 'img/EOC/07 EOC (think outside).jpg' }
     ],
     gallery: {
       enabled: true
@@ -82,11 +84,11 @@ $(document).ready(function () {
   });
   $('#Meetro').magnificPopup({
     items: [
-      { src: 'img/Meetro/Peppermint Mocha_Meetro_main1080x1375.jpg' },
-      { src: 'img/Meetro/Meetro White Chocolate_slide_1080.jpg' },
-      { src: 'img/Meetro/London Fog_Illustration_slide_1080.jpg' },
-      { src: 'img/Meetro/Vanilla Latte Swirly web.jpg' },
-      { src: 'img/Meetro/Meetro Pumpkin Latte_1080.jpg' }
+      { src: 'img/Meetro/01 meetro (Peppermint Mocha).jpg' },
+      { src: 'img/Meetro/02 meetro (White Chocolate).jpg' },
+      { src: 'img/Meetro/03 meetro (London Fog).jpg' },
+      { src: 'img/Meetro/04 meetro (Vanilla Latte Swirly).jpg' },
+      { src: 'img/Meetro/05 meetro (Pumpkin Latte).jpg' }
     ],
     gallery: {
       enabled: true
@@ -95,28 +97,30 @@ $(document).ready(function () {
   });
   $('#Infographics').magnificPopup({
     items: [
-      { src: 'img/infographics/Infographic Main_1920.jpg' },
-      { src: 'img/infographics/Journey info_web1920.jpg' }
+      { src: 'img/infographics/01 infographics (UCI).jpg' },
+      { src: 'img/infographics/02 infographics (UCI).jpg' },
+      { src: 'img/infographics/03 infographics (Journey).jpg' },
+      { src: 'img/infographics/04 infographics (Carbon Icons).jpg' },
+      { src: 'img/infographics/05 infographics (Carbon Footprint).jpg' }
     ],
     gallery: {
       enabled: true
     },
     type: 'image' // this is a default type
   });
-  $('#Logo').magnificPopup({
+  $('#Logo_Design').magnificPopup({
     items: [
-      { src: 'img/logo/Amped slide.jpg' },
-      { src: 'img/logo/Bowl n Roll_Slide_1920.jpg' },
-      { src: 'img/logo/CCYA logo slide.jpg' },
-      { src: 'img/logo/Corban dining_logo slide.jpg' },
-      { src: 'img/logo/Koji slide.jpg' },
-      { src: 'img/logo/MarketPlace SideBySide_1920.jpg' },
-      { src: 'img/logo/Michellies logo slide.jpg' },
-      { src: 'img/logo/SAM logo slide.jpg' },
-      { src: 'img/logo/The Grove_logo slide.jpg' },
-      { src: 'img/logo/UNLV logo slide.jpg' },
-      { src: 'img/logo/Feverish logo slide.jpg' },
-      { src: 'img/logo/Michellies pink logo slide.jpg' }
+      { src: 'img/logo/01 logo design (Bowl n Roll).jpg' },
+      { src: 'img/logo/02 logo design (Marketplace).jpg' },
+      { src: 'img/logo/03 logo design (CCYA).jpg' },
+      { src: 'img/logo/04 logo design (Corban Dining).jpg' },
+      { src: 'img/logo/05 logo design (Amped).jpg' },
+      { src: 'img/logo/06 logo design (The Grove).jpg' },
+      { src: 'img/logo/07 logo design (Michellies).jpg' },
+      { src: 'img/logo/08 logo design (Koji).jpg' },
+      { src: 'img/logo/09 logo design (SAM).jpg' },
+      { src: 'img/logo/10 logo design (UNLV).jpg' },
+      { src: 'img/logo/11 logo design (Feverish).jpg' }
     ],
     gallery: {
       enabled: true
@@ -125,26 +129,33 @@ $(document).ready(function () {
   });
   $('#Packaging').magnificPopup({
     items: [
-      { src: 'img/packaging/Tropito_all_web 1920x1025.jpg' }
+      { src: 'img/packaging/01 packaging (Tropito).jpg' },
+      { src: 'img/packaging/02 packaging (Junmai Ginjo Sake).jpg' },
+      { src: 'img/packaging/03 packaging (Juice Core).jpg' }
     ],
     gallery: {
       enabled: true
     },
     type: 'image' // this is a default type
   });
-  $('#Brand').magnificPopup({
+  $('#Branding').magnificPopup({
     items: [
-      { src: 'img/brand/JC main_1920x1080.jpg' },
-      { src: 'img/brand/Meetro spread_1920x1080.jpg' }
+      { src: 'img/branding/01 branding (Juice Core).jpg' },
+      { src: 'img/branding/02 branding (CCYA).jpg' },
+      { src: 'img/branding/03 branding (Grove).jpg' },
+      { src: 'img/branding/04 branding (Meetro).jpg' }
     ],
     gallery: {
       enabled: true
     },
     type: 'image' // this is a default type
   });
-  $('#Signage').magnificPopup({
+  $('#Collateral').magnificPopup({
     items: [
-      { src: 'img/signage/Farm 2 Fork_main1080x1366.jpg' }
+      { src: 'img/collateral/01 collateral (farm2fork).jpg' },
+      { src: 'img/collateral/02 collateral (art attack).jpg' },
+      { src: 'img/collateral/03 collateral (ABP).jpg' },
+      { src: 'img/collateral/04 collateral (biz cards).jpg' }
     ],
     gallery: {
       enabled: true

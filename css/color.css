@@ -25,11 +25,6 @@ header {
   z-index: 10;
 }
 
-.white-popup {
-  color: #000;
-  background: transparent;
-}
-
 article h1 em {
   font-style: normal;
   color: red;
@@ -45,23 +40,4 @@ a:hover {
 
 h1 a em {
   color: #f66;
-}
-
-@media screen and (max-width: 560px) {
-  form {color: black;}
-  ::-webkit-input-placeholder {color: black;}
-  ::-moz-placeholder {color: black;}
-  :-ms-input-placeholder {color: black;}
-  :-moz-placeholder {color: black;}
-}
-
-@media screen and (min-aspect-ratio: 1/1) {
-  #home {
-    background: #c36230 url("../img/sun-background-landscape.jpg") no-repeat fixed;
-    background-position: right bottom;
-    background-size: auto 100%;
-  }
-  #home body {
-    background-size: 50% auto;
-  }
 }

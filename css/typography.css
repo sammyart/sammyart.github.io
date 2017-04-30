@@ -28,23 +28,3 @@ header a {
 h1 a em {
   font-style: normal;
 }
-.white-popup h2 {
-  font-size: 1.4em;
-}
-.white-popup {
-  line-height: 2em;
-  font-size: .8em;
-}
-@media screen and (max-width: 1500px) {
-  header h1 a,
-  header nav a,
-  .white-popup h2 {
-    font-size: 24px;
-  }
-  .white-popup {
-    font-size:16px
-  }
-  form {
-    font-size: 1.2em;
-  }
-}

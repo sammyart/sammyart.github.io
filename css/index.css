@@ -1,0 +1,24 @@
+.stretch_it {
+  white-space: nowrap;
+}
+
+.justify {
+  text-align:justify;
+}
+
+.white-popup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5vw;
+  width:37vw;
+  line-height: 2em;
+  font-size: .8em;
+  color: #000;
+  background: transparent;
+}
+
+.white-popup h2 {
+  padding-bottom: 0.8em;
+  font-size: 1.4em;
+}

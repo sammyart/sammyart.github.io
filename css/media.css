@@ -1,0 +1,54 @@
+@media screen and (max-width: 1500px) {
+  header h1 a,
+  header nav a,
+  .white-popup h2 {
+    font-size: 24px;
+  }
+  .white-popup {
+    font-size:16px;
+    width: 520px;
+  }
+  form {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 580px) {
+  nav a {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+  nav.responsive {
+    position: relative;
+    margin-top: 70px;
+  }
+  nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  form {color: black;}
+  ::-webkit-input-placeholder {color: black;}
+  ::-moz-placeholder {color: black;}
+  :-ms-input-placeholder {color: black;}
+  :-moz-placeholder {color: black;}
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+  #home {
+    background: #c36230 url("../img/sun-background-landscape.jpg") no-repeat fixed;
+    background-position: right bottom;
+    background-size: auto 100%;
+  }
+  #home body {
+    background-size: 50% auto;
+  }
+}

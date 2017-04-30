@@ -1,0 +1,17 @@
+@import url('grids-responsive-min.css');
+@import url('magnific-popup.css');
+
+.portfolio figure {
+  margin: 0;
+}
+
+.portfolio figure img {
+  margin:auto;
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.portfolio figure img:hover {
+  -webkit-filter: brightness(30%);
+  cursor: pointer;
+}

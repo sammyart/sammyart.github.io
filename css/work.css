@@ -1,6 +1,8 @@
 @import url('grids-responsive-min.css');
 @import url('magnific-popup.css');
 
+html, body {overflow: hidden;}
+
 .portfolio figure {
   position: relative;
   margin: 0;

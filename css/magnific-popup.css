@@ -135,7 +135,7 @@ button::-moz-focus-inner {
   padding: 0 0 18px 10px;
   color: #000;
   font-style: normal;
-  font-size: 3vw;
+  font-size: 18px;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {

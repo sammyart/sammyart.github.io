@@ -59,6 +59,18 @@
   :-moz-placeholder {color: black;}
 }
 
+@media (orientation: landscape) {
+  .webkit-scroll-container > * {
+    -webkit-animation: fixWebkitOverflowScroll 1s;
+  }
+
+  @-webkit-keyframes fixWebkitOverflowScroll
+  {
+    0% {padding-bottom: 1px;}
+    100% {padding-bottom: 0px;}
+  }
+}
+
 @media screen and (min-aspect-ratio: 1/1) {
   #home {
     background: #c36230 url("../img/sun-background-landscape.jpg") no-repeat fixed;

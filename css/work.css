@@ -32,7 +32,7 @@ html, body {overflow: hidden;}
   padding-bottom: 16%;
   text-align: center;
   color: #fff;
-  text-shadow: 0 0 8px rgba(255, 0, 0, 6);
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 6);
   pointer-events: none;
 }
 

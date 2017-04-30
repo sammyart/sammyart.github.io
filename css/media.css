@@ -48,10 +48,11 @@
     padding-bottom: 0;
     background: rgba(0,0,0,0.6);
   }
-}
 
-@media screen and (max-width: 560px) {
-  form {color: black;}
+  form {
+    font-size: 3em;
+    color: black;
+  }
   ::-webkit-input-placeholder {color: black;}
   ::-moz-placeholder {color: black;}
   :-ms-input-placeholder {color: black;}

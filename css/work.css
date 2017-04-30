@@ -2,7 +2,9 @@
 @import url('magnific-popup.css');
 
 .portfolio figure {
+  position: relative;
   margin: 0;
+  padding: 0;
 }
 
 .portfolio figure img {
@@ -16,17 +18,9 @@
   cursor: pointer;
 }
 
-figure {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-figcaption h3 {
-}
-
-figcaption {
+.portfolio figcaption {
   opacity: 0;
+  display: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -35,12 +29,12 @@ figcaption {
   margin-left: 5%;
   padding-bottom: 16%;
   text-align: center;
-  font-size: 1.5em;
   color: #fff;
   text-shadow: 0 0 8px rgba(255, 0, 0, 6);
   pointer-events: none;
 }
 
-img:hover~figcaption, figcaption:hover {
+.portfolio img:hover + figcaption, .portfolio figcaption:hover {
   opacity: 1;
+  display: block;
 }

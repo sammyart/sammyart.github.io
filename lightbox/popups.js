@@ -10,12 +10,13 @@ $(document).ready(function () {
   });
   $('#Starbucks').magnificPopup({
     items: [
-      { src: 'img/Starbucks/01 Starbucks.jpg' },
-      { src: 'img/Starbucks/WPS_Holiday Duo_slide_1080x1375.jpg' },
-      { src: 'img/Starbucks/blender wps_1080.jpg' },
-      { src: 'img/Starbucks/Frappy Hour_1080x1375.jpg' },
-      { src: 'img/Starbucks/Caramel Macchiato_WPSslide_1080x1375.jpg' },
-      { src: 'img/Starbucks/Mango Iced Tea_WPSslide_1080x1375.jpg' }
+      { src: 'img/Starbucks/01 Starbucks (squirrels).jpg' },
+      { src: 'img/Starbucks/02 Starbucks (holiday duo).jpg' },
+      { src: 'img/Starbucks/03 Starbucks (blender).jpg' },
+      { src: 'img/Starbucks/04 Starbucks (frappy hour).jpg' },
+      { src: 'img/Starbucks/05 Starbucks (caramel macchiato).jpg' },
+      { src: 'img/Starbucks/06 Starbucks (mango iced tea).jpg' },
+      { src: 'img/Starbucks/07 Starbucks (December).jpg' }
     ],
     gallery: {
       enabled: true

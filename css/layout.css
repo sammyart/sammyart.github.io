@@ -1,38 +1,7 @@
 *:focus {
   outline: 0;
 }
-header {
-  padding: 20px 8%;
-  width: 84%;
-  position: fixed;
-  top: 0;
-}
-h1 {
-  margin: 0;
-}
-header + section {
-  margin-top: 70px;
-}
 
-nav {
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-h1 a, nav a {
-  padding: 0;
-  display: inline-block;
-}
-
-h1 a {
-  float: left;
-}
-
-nav a {
-  float: right;
-  margin-left: 1.6em;
-}
-
-nav .icon {
-  display: none;
+.navbar + section {
+  margin-top: 60px;
 }

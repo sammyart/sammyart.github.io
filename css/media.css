@@ -1,6 +1,4 @@
 @media screen and (max-width: 1500px) {
-  header h1 a,
-  header nav a,
   .white-popup h2 {
     font-size: 24px;
   }
@@ -12,26 +10,8 @@
     font-size: 1.2em;
   }
 }
-@media screen and (max-width: 660px) {
-  nav a {display: none;}
-  nav a.icon {
-    float: right;
-    display: block;
-  }
-  nav.responsive {
-    position: relative;
-    margin-top: 70px;
-  }
-  nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+
+@media screen and (max-width: 767px) {
   
   .white-popup h2 {
     font-size: 3.8vw;
@@ -50,7 +30,7 @@
   }
 
   form {
-    font-size: 3em;
+    font-size: 2em;
     color: black;
   }
   ::-webkit-input-placeholder {color: black;}

@@ -2,3 +2,11 @@
 @import url('layout.css');
 @import url('color.css');
 @import url('typography.css');
+
+.navbar .container-fluid {
+  padding: 0 2em;
+}
+
+.navbar .container-fluid, .navbar-brand {
+  font-size: 28px;
+}

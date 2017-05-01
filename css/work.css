@@ -9,7 +9,7 @@
 
 .portfolio figure img {
   margin:auto;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   width: 90%;
 }
 
@@ -25,13 +25,17 @@
   bottom: 0;
   left: 0;
   width: 90%;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
   margin-left: 5%;
-  padding-bottom: 16%;
+  padding-bottom: 20%;
   text-align: center;
   color: #fff;
   text-shadow: 5px 5px 8px rgba(0, 0, 0, 6);
   pointer-events: none;
+}
+
+.portfolio figcaption h3 {
+  color: #fff;
 }
 
 .portfolio img:hover + figcaption, .portfolio figcaption:hover {

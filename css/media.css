@@ -30,13 +30,9 @@
   }
 
   form {
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
   }
-  ::-webkit-input-placeholder {color: black;}
-  ::-moz-placeholder {color: black;}
-  :-ms-input-placeholder {color: black;}
-  :-moz-placeholder {color: black;}
 }
 
 @media screen and (min-aspect-ratio: 1/1) {

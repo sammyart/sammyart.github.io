@@ -14,6 +14,7 @@
   <![endif]--><!--[if gt IE 8]><!-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -35,23 +36,86 @@
     </div>
   </nav>
   <section>
-    <form action="https://formspree.io/m8r-5ohxvw@mailinator.com" title="muchlesseasilyfound" method="post">
-
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name">
-
-      <label for="email">EMail</label>
-      <input type="text" id="email" name="email" placeholder="you@somedomain.com">
-
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject">
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write to me" style="height:200px"></textarea>
-
-      <input type="submit" value="Submit">
+    <form id="contact_form" action="https://formspree.io/m8r-5ohxvw@mailinator.com" title="muchlesseasilyfound" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">EMail</label>
+        <input type="text" class="form-control" id="email" name="email" placeholder="you@somedomain.com">
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" name="message" placeholder="Write to me" style="height:200px"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </div>
     </form>
   </section>
-  <script src="lib/nav.js"></script>
+    <script>
+      $.validator.setDefaults( {
+        submitHandler: function () {
+          alert( "submitted!" );
+        }
+      } );
+
+      $( document ).ready( function () {
+        $( "#contact_form" ).validate( {
+          rules: {
+            name: "required",
+            email: {
+              required: true,
+              email: true
+            },
+            message: "required"
+          },
+          messages: {
+            name: "Please enter your name",
+            email: "Please enter a valid email address",
+            message: "Please let me know what's on your mind"
+          },
+          errorElement: "em",
+          errorPlacement: function ( error, element ) {
+            // Add the `help-block` class to the error element
+            error.addClass( "help-block" );
+
+            // Add `has-feedback` class to the parent div.form-group
+            // in order to add icons to inputs
+            element.parents( ".col-sm-5" ).addClass( "has-feedback" );
+
+            if ( element.prop( "type" ) === "checkbox" ) {
+              error.insertAfter( element.parent( "label" ) );
+            } else {
+              error.insertAfter( element );
+            }
+
+            // Add the span element, if doesn't exists, and apply the icon classes to it.
+            if ( !element.next( "span" )[ 0 ] ) {
+              $( "<span class='glyphicon glyphicon-remove form-control-feedback'></span>" ).insertAfter( element );
+            }
+          },
+          success: function ( label, element ) {
+            // Add the span element, if doesn't exists, and apply the icon classes to it.
+            if ( !$( element ).next( "span" )[ 0 ] ) {
+              $( "<span class='glyphicon glyphicon-ok form-control-feedback'></span>" ).insertAfter( $( element ) );
+            }
+          },
+          highlight: function ( element, errorClass, validClass ) {
+            $( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+            $( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
+          },
+          unhighlight: function ( element, errorClass, validClass ) {
+            $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+            $( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
+          }
+        } );
+      } );
+    </script>
 </body>
 </html>

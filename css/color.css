@@ -2,6 +2,8 @@ body {
   color: #999;
 }
 
+h2 { color: black; }
+
 #home {
   background: #c36230 url("../img/sun-background-portrait.jpg") no-repeat fixed;
 }

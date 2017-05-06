@@ -35,9 +35,8 @@
     </div>
   </nav>
   <article class="white-popup">
-    <h1>Success!</h1>
-    <h2 class="stretch">Thank you for reaching out!</h2>
-    <p>Hey<span id="name"></span>! I'll get back with you as soon as I can.</p>
+    <h2 class="stretch">¡ÉXITO! | УСПЕХ! | USPJEH! | SUCCESS!</h2>
+    <p>Thanks for reaching out<span id="name"></span>! I'll get back with you as soon as I can.</p>
   </article>
   <script>
     function getUrlVars() {
@@ -50,5 +49,6 @@
     var cleanname = getUrlVars()["name"];
     document.getElementById('name').innerHTML = ", " + cleanname.split('+').join(' ');
   </script>
+  <script src="lib/tools.js"></script>
 </body>
 </html>

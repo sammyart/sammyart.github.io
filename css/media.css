@@ -46,10 +46,15 @@
 @media screen and (min-aspect-ratio: 1/1) {
   #home {
     background: #c36230 url("../img/sun-background-landscape.jpg") no-repeat fixed;
+  }
+  #thanks {
+    background: #b6b6b6 url("../img/sun-background-landscape-bw.jpg") no-repeat fixed;
+  }
+  #home, #thanks {
     background-position: right bottom;
     background-size: auto 100%;
   }
-  #home body {
+  #home body, #thanks body {
     background-size: 50% auto;
   }
 }

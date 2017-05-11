@@ -14,12 +14,12 @@ section form {
 
 button.btn-warning {
   background-color: #f00;
-  background-image: linear-gradient(#f00, #f00 20%, #000);
+  background-image: linear-gradient(#d9230f, #d9230f 60%, #d9230f);
   border: 1px solid #000;
 }
 
 button.btn-warning:hover {
   background-color: #f00;
-  background-image: linear-gradient(#000, #f00 60%, #f00);
+  background-image: linear-gradient(#f66, #f66 20%, #f66);
   border: 1px solid #000;
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="contact">
 <head>
   <title>Contact Barbara Samanich</title>
   <meta charset="utf-8">
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/sticky-footer.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
@@ -69,6 +70,13 @@
       </div>
     </form>
   </section>
+  <footer>
+    <h4 class="pull-left">&copy; Barbara Samanich 2017</h4>
+    <ul class="pull-right list-inline">
+      <li><a href="https://www.behance.net/sammyart"><img src="img/behance.png" style="height: 30px;"></a></li>
+      <li><a href="https://www.linkedin.com/in/barbara-samanich-baba2935"><img src="img/linkedin.png" style="height: 30px;"></a></li>
+    </ul>
+  </footer>
     <script>
       $(document).ready(function() {
         $('#contact_form').bootstrapValidator({
@@ -105,96 +113,6 @@
           }
         });
       });
-/* 
-      $( document ).ready( function () {
-        $("form").validate({
-          rules: {
-            name: {
-              required: true
-            },
-            email: {
-              required: true,
-              email: true
-            },
-            message: "required"
-          },
-          messages: {
-            name: "Please enter your name",
-            email: "Please enter a valid email address",
-            message: "Please let me know what's on your mind"
-          },
-          highlight: function(element) {
-            var id_attr = "#" + $( element ).attr("id") + "1";
-            $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-            $(id_attr).removeClass('glyphicon-ok').addClass('glyphicon-remove');         
-          },
-          unhighlight: function(element) {
-            var id_attr = "#" + $( element ).attr("id") + "1";
-            $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
-            $(id_attr).removeClass('glyphicon-remove').addClass('glyphicon-ok');         
-          },
-          errorElement: 'span',
-          errorClass: 'help-block',
-          errorPlacement: function(error, element) {
-            if(element.length) {
-              error.insertAfter(element);
-            } else {
-              error.insertAfter(element);
-            }
-          } 
-        });
-      });   
-        $( "#contact_form" ).validate( {
-          rules: {
-            name: "required",
-            email: {
-              required: true,
-              email: true
-            },
-            message: "required"
-          },
-          messages: {
-            name: "Please enter your name",
-            email: "Please enter a valid email address",
-            message: "Please let me know what's on your mind"
-          },
-          errorElement: "em",
-          errorPlacement: function ( error, element ) {
-            // Add the `help-block` class to the error element
-            error.addClass( "help-block" );
-
-            // Add `has-feedback` class to the parent div.form-group
-            // in order to add icons to inputs
-            element.parents( ".col-sm-5" ).addClass( "has-feedback" );
-
-            if ( element.prop( "type" ) === "checkbox" ) {
-              error.insertAfter( element.parent( "label" ) );
-            } else {
-              error.insertAfter( element );
-            }
-
-            // Add the span element, if doesn't exists, and apply the icon classes to it.
-            if ( !element.next( "span" )[ 0 ] ) {
-              $( "<span class='glyphicon glyphicon-remove form-control-feedback'></span>" ).insertAfter( element );
-            }
-          },
-          success: function ( label, element ) {
-            // Add the span element, if doesn't exists, and apply the icon classes to it.
-            if ( !$( element ).next( "span" )[ 0 ] ) {
-              $( "<span class='glyphicon glyphicon-ok form-control-feedback'></span>" ).insertAfter( $( element ) );
-            }
-          },
-          highlight: function ( element, errorClass, validClass ) {
-            $( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
-            $( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
-          },
-          unhighlight: function ( element, errorClass, validClass ) {
-            $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
-            $( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
-          }
-        } );
-      } );
-*/
     </script>
 </body>
 </html>

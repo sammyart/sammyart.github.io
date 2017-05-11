@@ -2,6 +2,10 @@
   outline: 0;
 }
 
+.navbar .container-fluid {
+  padding: 0 2em;
+}
+
 .navbar + section {
   margin-top: 60px;
 }

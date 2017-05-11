@@ -5,16 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/media.css">
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="grid/grids-responsive-old-ie-min.css">
-  <![endif]--><!--[if gt IE 8]><!-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -36,30 +33,117 @@
     </div>
   </nav>
   <section>
-    <form id="contact_form" action="http://sam.euterpe.online/mailsam.php" method="post">
+    <form id="contact_form" class="form-horizontal" action="http://sam.euterpe.online/mailsam.php" method="post">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+        <label for="name" class="col-md-2 control-label">Name</label>  
+        <div class="col-md-10 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input name="name" id="name" placeholder="Your Name" class="form-control" type="text">
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="email">EMail</label>
-        <input type="text" class="form-control" id="email" name="email" placeholder="you@somedomain.com">
+        <label for="email" class="col-md-2 control-label">E-Mail</label>  
+          <div class="col-md-10 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input name="email" id="email" placeholder="Your E-Mail Address (you@somedomain.com)" class="form-control" type="text">
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="subject">Subject</label>
-        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+        <label for="message" class="col-md-2 control-label">Message</label>
+          <div class="col-md-10 inputGroupContainer">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+            <textarea name="message" id="message" placeholder="I would love to hear from you!" class="form-control"></textarea>
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" class="form-control" name="message" placeholder="Write to me" style="height:200px"></textarea>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Submit" class="btn btn-primary">
+        <label class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+          <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        </div>
       </div>
     </form>
   </section>
     <script>
+      $(document).ready(function() {
+        $('#contact_form').bootstrapValidator({
+          feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+          },
+          fields: {
+            name: {
+              validators: {
+                notEmpty: {
+                  message: 'Please enter your name'
+                }
+              }
+            },
+            email: {
+              validators: {
+                notEmpty: {
+                  message: 'Please supply your email address'
+                },
+                emailAddress: {
+                  message: 'Please supply a valid email address'
+                }
+              }
+            },
+            message: {
+              validators: {
+                notEmpty: {
+                  message: 'Please let me know what is on your mind.'
+                }
+              }
+            }
+          }
+        });
+      });
+/* 
       $( document ).ready( function () {
+        $("form").validate({
+          rules: {
+            name: {
+              required: true
+            },
+            email: {
+              required: true,
+              email: true
+            },
+            message: "required"
+          },
+          messages: {
+            name: "Please enter your name",
+            email: "Please enter a valid email address",
+            message: "Please let me know what's on your mind"
+          },
+          highlight: function(element) {
+            var id_attr = "#" + $( element ).attr("id") + "1";
+            $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+            $(id_attr).removeClass('glyphicon-ok').addClass('glyphicon-remove');         
+          },
+          unhighlight: function(element) {
+            var id_attr = "#" + $( element ).attr("id") + "1";
+            $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+            $(id_attr).removeClass('glyphicon-remove').addClass('glyphicon-ok');         
+          },
+          errorElement: 'span',
+          errorClass: 'help-block',
+          errorPlacement: function(error, element) {
+            if(element.length) {
+              error.insertAfter(element);
+            } else {
+              error.insertAfter(element);
+            }
+          } 
+        });
+      });   
         $( "#contact_form" ).validate( {
           rules: {
             name: "required",
@@ -110,6 +194,7 @@
           }
         } );
       } );
+*/
     </script>
 </body>
 </html>

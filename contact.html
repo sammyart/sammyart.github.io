@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/sticky-footer.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -77,42 +74,45 @@
       <li><a href="https://www.linkedin.com/in/barbara-samanich-baba2935"><img src="img/linkedin.png" style="height: 30px;"></a></li>
     </ul>
   </footer>
-    <script>
-      $(document).ready(function() {
-        $('#contact_form').bootstrapValidator({
-          feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#contact_form').bootstrapValidator({
+        feedbackIcons: {
+          valid: 'glyphicon glyphicon-ok',
+          invalid: 'glyphicon glyphicon-remove',
+          validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+          name: {
+            validators: {
+              notEmpty: {
+                message: 'Please enter your name'
+              }
+            }
           },
-          fields: {
-            name: {
-              validators: {
-                notEmpty: {
-                  message: 'Please enter your name'
-                }
+          email: {
+            validators: {
+              notEmpty: {
+                message: 'Please supply your email address'
+              },
+              emailAddress: {
+                message: 'Please supply a valid email address'
               }
-            },
-            email: {
-              validators: {
-                notEmpty: {
-                  message: 'Please supply your email address'
-                },
-                emailAddress: {
-                  message: 'Please supply a valid email address'
-                }
-              }
-            },
-            message: {
-              validators: {
-                notEmpty: {
-                  message: 'Please let me know what is on your mind.'
-                }
+            }
+          },
+          message: {
+            validators: {
+              notEmpty: {
+                message: 'Please let me know what is on your mind.'
               }
             }
           }
-        });
+        }
       });
-    </script>
+    });
+  </script>
 </body>
 </html>

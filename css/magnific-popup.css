@@ -27,7 +27,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  padding: 0 8px;
+  padding: 0 2px;
   box-sizing: border-box; }
 
 .mfp-container:before {
@@ -127,7 +127,7 @@ button::-moz-focus-inner {
   height: 44px;
   line-height: 44px;
   position: absolute;
-  right: 0;
+  right: 8px;
   top: 0;
   text-decoration: none;
   text-align: center;
@@ -136,7 +136,7 @@ button::-moz-focus-inner {
   color: #000;
   font-style: normal;
   font-size: 18px;
-  font-family: Arial, Baskerville, monospace; }
+  font-family: "Century Gothic", CenturyGothic, 'Montserrat', sans-serif; }
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }

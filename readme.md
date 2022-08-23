@@ -1,1 +1,1 @@
-Special thanks to [My True Media](https://mytruemedia.com/ 'helping cord cutters drop their entertainment bills').
+Visit my stake pool: [Adaberry Pi](https://pool.adaberrypi.com/ 'helping heal humanity & Mother Earth').
